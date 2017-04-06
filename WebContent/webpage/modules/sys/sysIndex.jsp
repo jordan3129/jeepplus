@@ -74,7 +74,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="logo-element">JP
+                        <div class="logo-element">WXZ
                         </div>
                     </li>
      
