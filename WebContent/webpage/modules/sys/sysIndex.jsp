@@ -168,67 +168,67 @@
                         </li>
                       
                       <!-- 国际化功能预留接口 -->
-                        <li class="dropdown">
-							<a id="lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">
-								<span class="lang-selected">
-										<img  class="lang-flag" src="${ctxStatic}/common/img/china.png" alt="中国">
-										<span class="lang-id">中国</span>
-										<span class="lang-name">中文</span>
-									</span>
-							</a>
+                        <%--<li class="dropdown">--%>
+							<%--<a id="lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">--%>
+								<%--<span class="lang-selected">--%>
+										<%--<img  class="lang-flag" src="${ctxStatic}/common/img/china.png" alt="中国">--%>
+										<%--<span class="lang-id">中国</span>--%>
+										<%--<span class="lang-name">中文</span>--%>
+									<%--</span>--%>
+							<%--</a>--%>
 
-							<!--Language selector menu-->
-							<ul class="head-list dropdown-menu with-arrow">
-								<li>
-									<!--English-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/china.png" alt="中国">
-										<span class="lang-id">中国</span>
-										<span class="lang-name">中文</span>
-									</a>
-								</li>
-								<li>
-									<!--English-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/united-kingdom.png" alt="English">
-										<span class="lang-id">EN</span>
-										<span class="lang-name">English</span>
-									</a>
-								</li>
-								<li>
-									<!--France-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/france.png" alt="France">
-										<span class="lang-id">FR</span>
-										<span class="lang-name">Français</span>
-									</a>
-								</li>
-								<li>
-									<!--Germany-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/germany.png" alt="Germany">
-										<span class="lang-id">DE</span>
-										<span class="lang-name">Deutsch</span>
-									</a>
-								</li>
-								<li>
-									<!--Italy-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/italy.png" alt="Italy">
-										<span class="lang-id">IT</span>
-										<span class="lang-name">Italiano</span>
-									</a>
-								</li>
-								<li>
-									<!--Spain-->
-									<a class="lang-select">
-										<img class="lang-flag" src="${ctxStatic}/common/img/spain.png" alt="Spain">
-										<span class="lang-id">ES</span>
-										<span class="lang-name">Español</span>
-									</a>
-								</li>
-							</ul>
-						</li>
+							<%--<!--Language selector menu-->--%>
+							<%--<ul class="head-list dropdown-menu with-arrow">--%>
+								<%--<li>--%>
+									<%--<!--English-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/china.png" alt="中国">--%>
+										<%--<span class="lang-id">中国</span>--%>
+										<%--<span class="lang-name">中文</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+								<%--<li>--%>
+									<%--<!--English-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/united-kingdom.png" alt="English">--%>
+										<%--<span class="lang-id">EN</span>--%>
+										<%--<span class="lang-name">English</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+								<%--<li>--%>
+									<%--<!--France-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/france.png" alt="France">--%>
+										<%--<span class="lang-id">FR</span>--%>
+										<%--<span class="lang-name">Français</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+								<%--<li>--%>
+									<%--<!--Germany-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/germany.png" alt="Germany">--%>
+										<%--<span class="lang-id">DE</span>--%>
+										<%--<span class="lang-name">Deutsch</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+								<%--<li>--%>
+									<%--<!--Italy-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/italy.png" alt="Italy">--%>
+										<%--<span class="lang-id">IT</span>--%>
+										<%--<span class="lang-name">Italiano</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+								<%--<li>--%>
+									<%--<!--Spain-->--%>
+									<%--<a class="lang-select">--%>
+										<%--<img class="lang-flag" src="${ctxStatic}/common/img/spain.png" alt="Spain">--%>
+										<%--<span class="lang-id">ES</span>--%>
+										<%--<span class="lang-name">Español</span>--%>
+									<%--</a>--%>
+								<%--</li>--%>
+							<%--</ul>--%>
+						<%--</li>--%>
                     </ul>
                 </nav>
             </div>
@@ -296,29 +296,29 @@ function changeStyle(){
 
 
 <!-- 即时聊天插件  开始-->
-<link href="${ctxStatic}/layer-v2.3/layim/layui/css/layui.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript">
-var currentId = '${fns:getUser().loginName}';
-var currentName = '${fns:getUser().name}';
-var currentFace ='${fns:getUser().photo}';
-var url="${ctx}";
-var static_url="${ctxStatic}";
-var wsServer = 'ws://'+window.document.domain+':8668'; 
+<%--<link href="${ctxStatic}/layer-v2.3/layim/layui/css/layui.css" type="text/css" rel="stylesheet"/>--%>
+<%--<script type="text/javascript">--%>
+<%--var currentId = '${fns:getUser().loginName}';--%>
+<%--var currentName = '${fns:getUser().name}';--%>
+<%--var currentFace ='${fns:getUser().photo}';--%>
+<%--var url="${ctx}";--%>
+<%--var static_url="${ctxStatic}";--%>
+<%--var wsServer = 'ws://'+window.document.domain+':8668'; --%>
 
-</script>
-<!--webscoket接口  -->
-<script src="${ctxStatic}/layer-v2.3/layim/layui/layui.js"></script>
+<%--</script>--%>
+<%--<!--webscoket接口  -->--%>
+<%--<script src="${ctxStatic}/layer-v2.3/layim/layui/layui.js"></script>--%>
 
-<script src="${ctxStatic}/layer-v2.3/layim/layim.js"></script>
-<!-- 即时聊天插件 结束 -->
-<style>
-/*签名样式*/
-.layim-sign-box{
-	width:95%
-}
-.layim-sign-hide{
-  border:none;background-color:#F5F5F5;
-}
-</style>
+<%--<script src="${ctxStatic}/layer-v2.3/layim/layim.js"></script>--%>
+<%--<!-- 即时聊天插件 结束 -->--%>
+<%--<style>--%>
+<%--/*签名样式*/--%>
+<%--.layim-sign-box{--%>
+	<%--width:95%--%>
+<%--}--%>
+<%--.layim-sign-hide{--%>
+  <%--border:none;background-color:#F5F5F5;--%>
+<%--}--%>
+<%--</style>--%>
 
 </html>
